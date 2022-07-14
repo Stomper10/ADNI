@@ -1,0 +1,35 @@
+1. AD (281) vs CN (738) Total 1019
+    a) For N = 100
+        train  100 (AD  50, CN  50)
+        valid   25 (AD  12, CN  13)
+        test   437 (AD 219, CN 218)
+        TOTAL  562 (AD 281, CN 281)
+    b) For N = 300
+        train  300 (AD 150, CN 150)
+        valid   75 (AD  38, CN  37)
+        test   187 (AD  93, CN  94)
+        TOTAL  562 (AD 281, CN 281)
+
+2. AD (281) vs MCI (788) Total 1069
+    a) For N = 100
+        train  100 (AD  50, MCI  50)
+        valid   25 (AD  12, MCI  13)
+        test   437 (AD 219, MCI 218)
+        TOTAL  562 (AD 281, MCI 281)
+    b) For N = 300
+        train  300 (AD 150, MCI 150)
+        valid   75 (AD  38, MCI  37)
+        test   187 (AD  93, MCI  94)
+        TOTAL  562 (AD 281, MCI 281)
+
+3. MCI (788) vs CN (738) Total 1526
+    a) For N = 100
+        train  100 (MCI  50, CN  50)
+        valid   25 (MCI  12, CN  13)
+        test  1351 (MCI 676, CN 675)
+        TOTAL 1476 (MCI 738, CN 738)
+    b) For N = 500
+        train  500 (MCI 250, CN 250)
+        valid  125 (MCI  62, CN  63)
+        test   851 (MCI 426, CN 425)
+        TOTAL 1476 (MCI 738, CN 738)
