@@ -1,7 +1,7 @@
 # ADNI Classification / Regression Tasks
 
 현재 디렉토리에 `adni_t1s_baseline` 디렉토리를 두세요.  
-5-fold cross-validation을 사용해 모델 학습 및 추론을 진행합니다.
+Cross-validation을 사용해 모델 학습 및 추론을 진행합니다.
 
 코드 실행 예시는 아래와 같습니다.
 ```bash
