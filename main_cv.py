@@ -190,8 +190,7 @@ if __name__ == "__main__":
         aurocMean_arr = np.array(aurocMean_list)
         acc_list_arr = np.array(acc_list)
         epoch_list_arr = np.array(epoch_list)
-        print('<<< Stratified {0} Fold Test mean AUC: {1:.4f}, std: {2:.4f} \
-               / Test mean ACC: {3:.4f}, std: {4:.4f} >>>'.format(SPLITS, np.mean(aurocMean_arr), np.std(aurocMean_arr), np.mean(acc_list_arr), np.std(acc_list_arr)))
+        print('<<< Stratified {0} Fold Test mean AUC: {1:.4f}, std: {2:.4f} / Test mean ACC: {3:.4f}, std: {4:.4f} >>>'.format(SPLITS, np.mean(aurocMean_arr), np.std(aurocMean_arr), np.mean(acc_list_arr), np.std(acc_list_arr)))
     else: # config.task_type == 'reg':
         print('<<< Stratified {0} Fold Test mean MSE: {1:.4f}, std: {2:.4f}'.format(SPLITS, np.mean(mse_list), np.std(mse_list)))
 
