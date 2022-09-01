@@ -31,7 +31,7 @@ class ADNI_Dataset(Dataset):
             elif self.config.tf == "crop":
                 self.transforms.register(Crop(np.ceil(0.75*np.array(self.config.input_size)), "random", resize=True), probability=1)
         
-        self.data_dir = './adni_t1s_baseline'
+        self.data_dir = config.data
         self.data_csv = data_csv
         self.files = [x for x in os.listdir(self.data_dir) if x[4:12] in list(self.data_csv['SubjectID'])]
         

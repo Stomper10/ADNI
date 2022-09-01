@@ -26,6 +26,9 @@ class yAwareCLModel:
         if config.layer_control == 'tune_all':
             self.optimizer = torch.optim.Adam(net.parameters(), lr=config.lr, weight_decay=config.weight_decay)
         elif config.layer_control == 'freeze':
+            for name, param in net.named_parameters():
+                if param.requires_grad and 'classifier' not in name:
+                    param.requires_grad = False
             self.optimizer = torch.optim.Adam(net.classifier.parameters(), lr=config.lr, weight_decay=config.weight_decay)
         else: # layer_control == 'tune_diff':
             if config.model == 'DenseNet':
