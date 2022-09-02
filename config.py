@@ -5,7 +5,7 @@ class Config:
         for name, value in vars(args).items():
             setattr(self, name, value)
        
-        self.data = './adni_t1s_baseline' 
+        self.data = '/media/leelabsg-storage0/wonyoung/leelab/MRI/yAwareContrastiveLearning/adni_t1s_baseline' 
         self.label = './csv/fsdat_baseline.csv' 
         self.label_name = 'Dx.new'  # `Dx.new`
         self.task_type = 'cls'  # 'cls' or 'reg'
